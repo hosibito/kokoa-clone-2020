@@ -1,3 +1,7 @@
 # Kokoa Clone 2020 Update
 
-html 과 css 를 공부해보자.
+html and css
+
+github에 한글을 올려도 잘 올라갈까?
+
+커밋을 한글로 하면 어떨까?
