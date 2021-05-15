@@ -24,3 +24,26 @@ body {
   width: 60%;
   opacity: 0.7;
 }
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+}
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  /* outline: none;  개별적용 여기서는 전체 적용하므로 reset.css 에 끼워 넣는다. */
+  border-color: rgba(0, 0, 0, 0.4);
+}
