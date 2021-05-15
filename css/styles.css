@@ -1,5 +1,6 @@
 /* 구글 폰트에서 가져온 Open Sans 폰트 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "reset.css";
 body {
   font-family: "Open Sans", sans-serif; /* 구글 폰트에서 가져온 Open Sans 폰트 적용 */
 }
