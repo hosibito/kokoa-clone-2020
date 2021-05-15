@@ -1,38 +1,8 @@
 /* 구글 폰트에서 가져온 Open Sans 폰트 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import "reset.css";
+@import "reset.css"; /* 브라우저기본제공 css를 초기화한다.  */
+@import "status-bar.css";
+
 body {
   font-family: "Open Sans", sans-serif; /* 구글 폰트에서 가져온 Open Sans 폰트 적용 */
-}
-
-.status-bar {
-  display: flex;
-  justify-content: center; /* 시계를 가운데 두기위한 css 핵 1 센터에 모은다. */
-}
-
-.status-bar__column {
-  width: 33%; /* 시계를 가운데 두기위한 css 핵   2  */
-}
-
-.status-bar__column:nth-child(2) {
-  display: flex; /* 시계를 가운데 두기위한 css 핵   3 시계가 가운데로옴 */
-  justify-content: center;
-}
-
-.status-bar__column:last-child {
-  display: flex; /* 시계를 가운데 두기위한 css 핵  4. 뒤부분을 뒤로 정렬*/
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.status-bar__column:first-child span {
-  margin-right: 5px;
-}
-
-.status-bar__column .fa-lock {
-  margin: 0px 5px;
-}
-
-.status-bar__column .fa-battery-full {
-  margin: 0px 5px;
 }
