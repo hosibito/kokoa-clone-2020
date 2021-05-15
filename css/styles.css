@@ -1,6 +1,7 @@
 /* 구글 폰트에서 가져온 Open Sans 폰트 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "reset.css"; /* 브라우저기본제공 css를 초기화한다.  */
+@import "variables.css";
 @import "status-bar.css";
 
 body {
@@ -37,6 +38,7 @@ body {
   font-size: 18px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
+  transition: border-color 0.3s ease-in-out;
 }
 
 #login-form input::placeholder {
@@ -45,5 +47,5 @@ body {
 
 #login-form input:focus {
   /* outline: none;  개별적용 여기서는 전체 적용하므로 reset.css 에 끼워 넣는다. */
-  border-color: rgba(0, 0, 0, 0.4);
+  border-color: var(--yellow);
 }
