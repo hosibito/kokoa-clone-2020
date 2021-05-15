@@ -36,8 +36,12 @@ body {
   border: none;
   padding: 15px 0px;
   font-size: 18px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
+}
+
+#login-form input:not([type="submit"]) {
+  /* 로그인 버튼이 포커스될때 하단 노란선이 생기는것을 이렇게 방지할수 있다.  */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -47,5 +51,21 @@ body {
 
 #login-form input:focus {
   /* outline: none;  개별적용 여기서는 전체 적용하므로 reset.css 에 끼워 넣는다. */
-  border-color: var(--yellow);
+  border-color: var(
+    --yellow
+  ); /* 로그인버튼 하단에 색이 바뀌긴하지만 border-bottom이 설정되지 않았으므로 보이지 않는다.  */
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer; /* 커서가 올라가면 손가락 표시 */
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit; /* 부모의것을 물려받는다..  링크는 기본 파란색  부모컬러 검정 */
+  font-size: 14px;
 }
