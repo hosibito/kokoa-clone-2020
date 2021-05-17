@@ -1,9 +1,22 @@
 .nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #f9f9fa;
-  padding: 20px 40px;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
+/* 네비바가 하단에 고정되게 하기위해  position: fixed;   bottom: 0;  을 적용 
+    -> 하단에 고정되나 아이콘들이 앞쪽에 모임 : 폭을 잃어버린거이므로  width: 100%; 을 적용
+    -> 맨 오른쪽 아이콘이 사라짐 : 패딩값 때문 : box-sizing: border-box; 적용  */
 
 .nav__list {
   display: flex;
   justify-content: space-between;
+}
+
+/* 리셋 css 에서 따로 초기화 했다.  */
+.nav__link {
+  color: #2e363e;
 }

@@ -1,8 +1,16 @@
 .status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: center; /* 시계를 가운데 두기위한 css 핵 1 센터에 모은다. */
   padding: 5px 3px;
 }
+/* 상단고정작업
+ position: fixed;
+  top: 0;
+  width: 100%;
+*/
 
 .status-bar__column {
   width: 33%; /* 시계를 가운데 두기위한 css 핵   2  */

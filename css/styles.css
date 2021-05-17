@@ -14,4 +14,5 @@
 
 body {
   font-family: "Open Sans", sans-serif; /* 구글 폰트에서 가져온 Open Sans 폰트 적용 */
+  height: 1000vh;
 }
