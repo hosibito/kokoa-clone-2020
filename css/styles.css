@@ -12,9 +12,11 @@
 
 /*  Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
   font-family: "Open Sans", sans-serif; /* 구글 폰트에서 가져온 Open Sans 폰트 적용 */
   /*height: 1000vh;  스크롤 확인 */
   padding-top: 25px;
+  color: #2e363e;
 }
