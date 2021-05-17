@@ -22,4 +22,21 @@
 /* 리셋 css 에서 따로 초기화 했다.  */
 .nav__link {
   color: #2e363e;
+  position: relative;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+
+  position: absolute; /* position: relative; 파더가 기준*/
+  left: 15px;
+  bottom: 15px;
 }
