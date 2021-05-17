@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>코코아톡에 오신걸 환영합니다. </title>
+    <title>친구화면 - Kokoa Clone</title>
 </head>
 <body>    
     <div class="status-bar">
@@ -28,22 +28,25 @@
         </div>
     </div>
 
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">코코아클론에 오신걸 환영합니다.</h1>
-        <p class="welcome-header__text">
-            코코아 클론에 가입된 분이시라면, 이메일 또는 전화번호로 로그인해주세요.
-        </p>
-    </header>
-
-    <form  action="friends.html" method="GET" id="login-form">
-        <input name="username" type="text" placeholder="이메일 또는 전화번호" />
-        <input name="password" type="password" placeholder="비밀번호" />
-        <input type="submit" value="로그인">
-        <a href="#">아이디, 비밀번호 찾기</a>
-    </form>
+    <!-- nav>ul>li*4>a  입력 tab 입력 tab-->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav_btn">
+                <a class="nav__link" href="friends.html"><i class="fas fa-user fa-lg"></i></a>
+            </li>
+            <li class="nav_btn">
+                <a class="nav__link" href="#"><i class="far fa-comment fa-lg"></i></a>
+            </li>
+            <li class="nav_btn">
+                <a class="nav__link" href="#"><i class="fas fa-search fa-lg"></i></a>
+            </li>
+            <li class="nav_btn">
+                <a class="nav__link" href="#"><i class="fas fa-ellipsis-h fa-lg"></i></a>
+            </li>            
+        </ul>
+    </nav>
     
 
-    
     <script src="https://kit.fontawesome.com/938322e012.js" crossorigin="anonymous"></script>
 </body>
 </html>

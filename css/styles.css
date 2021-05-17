@@ -1,10 +1,13 @@
 /* 구글 폰트에서 가져온 Open Sans 폰트 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import "reset.css"; /* 브라우저기본제공 css를 초기화한다.  */
+
+/* 브라우저기본제공 css를 초기화한다.  */
+@import "reset.css";
 @import "variables.css";
 
 /* Components */
 @import "components/status-bar.css";
+@import "components/nav-bar.css";
 
 /*  Screens */
 @import "screens/login.css";
