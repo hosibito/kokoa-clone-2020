@@ -52,3 +52,7 @@
   display: block;
   margin-bottom: 5px;
 }
+
+.user-component__color-red {
+  color: red;
+}

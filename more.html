@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설정- Kokoa Clone</title>
+</head>
+<body>    
+    <div class="status-bar">
+        <div class="status-bar__column">  <!-- 부모자식이 먼지 알려주는 클래스명을 사용 길어도 됨 -->
+            <span>서비즈중이 아님</span>
+            <!-- To Dd : Wifi Icon -->
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <!-- 잠금 icon -->
+            <i class="fas fa-lock"></i>
+            <span>95%</span>
+            <!-- 배터리 Icon -->
+            <i class="fas fa-battery-full fa-lg"></i>
+            <!-- 번개 Icon -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">설정</h1>    
+        <div class="screen-header__icons">            
+            <div><i class="fas fa-search fa-lg"></i></div>   
+            <div><i class="fas fa-music fa-lg"></i></div>        
+            <div> 
+                <span class="screen-header__linkNotification noticeDot"></span>  
+                <i class="fas fa-cog fa-lg"></i>   
+            </div>
+        </div>
+    </header> 
+            
+    <main class="main-screen more-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img 
+                    src="https://photo.coolenjoy.net/data/editor/1702/20170216175928_cnbazxgd.jpg" 
+                    class="user-component__avatar"
+                />
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Hosibito</h4>
+                    <h6 class="user-component__subtitle">
+                        +81-0000-0000
+                        <i class="fas fa-exclamation-circle user-component__color-red"></i>
+                    </h6> 
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i class="far fa-comment-alt fa-2x"></i>
+            </div>
+        </div>   
+        
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="far fa-calendar-check"></i>
+                <span>달력</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-save"></i>
+                <span>대화 저장</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-grin-squint-tears"></i>
+                <span>이모티콘</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-image"></i>
+                <span>테마</span>
+            </div>
+        </div>
+
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="fas fa-user-circle"></i>
+                <span>계정</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-comments"></i>
+                <span>Openchat</span>
+            </div>
+            <div class="icon-row__icon"></div>
+            <div class="icon-row__icon"></div>
+        </div>
+
+        <div class="more-suggestions">
+            <h4 class="more-suggestions__title">추천 앱</h4>
+            <div class="more-suggestions__icons">
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+
+                    </div>
+                    <span class="more-suggestion__icon-text">코코아 스토리</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <!-- nav>ul>li*4>a  입력 tab 입력 tab-->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav_btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav_btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav_btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav_btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__linkNotification noticeDot"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>            
+        </ul>
+    </nav>
+    
+
+
+    <script src="https://kit.fontawesome.com/938322e012.js" crossorigin="anonymous"></script>
+</body>
+</html>
