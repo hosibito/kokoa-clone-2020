@@ -48,6 +48,12 @@
   opacity: 0.6;
 }
 
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .open-post__title {
   font-weight: 600;
   margin-bottom: 7px;
@@ -87,4 +93,33 @@
 
 .open-post__memvers-status {
   color: #ffb0e0;
+}
+
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-right: 5px;
+}
+
+.open-post__hart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+}
+
+.open-post__hart-count span {
+  margin-left: 3px;
 }
