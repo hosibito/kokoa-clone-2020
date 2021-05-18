@@ -40,12 +40,12 @@
 
 #login-form input:not([type="submit"]) {
   /* 로그인 버튼이 포커스될때 하단 노란선이 생기는것을 이렇게 방지할수 있다.  */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: var(--main-border);
   transition: border-color 0.3s ease-in-out;
 }
 
 #login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--font-color-gray);
 }
 
 #login-form input:focus {
