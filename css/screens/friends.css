@@ -25,6 +25,16 @@
   color: var(--font-color-gray);
 }
 
+@keyframes hideSplashScreen {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden; /* html 코드상에는 남아있다 완전히 없애려면 JS 이용해야 한다.  */
+  }
+}
+
 #splash-screen {
   background-color: var(--yellow);
   position: absolute;
@@ -35,4 +45,7 @@
   justify-content: center;
   align-items: center;
   font-size: 120px;
+  animation: hideSplashScreen 0.5s ease-in-out forwards;
+  /* 애니메이션은 끝난후 처음으로 되돌아가서 멈추는데 forwards 옵션으로 인해 끝난상태로 있는다.  */
+  animation-delay: 1s;
 }
