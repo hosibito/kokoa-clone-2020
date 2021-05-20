@@ -123,5 +123,6 @@
 
 .open-post__hart-count:hover i {
   will-change: transform;
+  /* 이게 변할것이라고 브라우져에게 알려줘서 좀더 부드러운(개선된) 에니메이션을 표현한다.  */
   animation: heartBeat 0.6s linear infinite;
 }
