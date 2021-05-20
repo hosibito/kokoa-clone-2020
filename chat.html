@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>채팅 with kokoaTalk</title>
 </head>
-<body id="chat-screen">    
+<body id="chat-screen">    <!-- 다른창들과 다른작업을 할꺼 라서 id 값을줬다. -->
     <div class="status-bar">
         <div class="status-bar__column">  <!-- 부모자식이 먼지 알려주는 클래스명을 사용 길어도 됨 -->
             <span>서비즈중이 아님</span>
@@ -30,7 +30,7 @@
 
     <header class="alt-header">
         <div class="alt-header__column">
-            <a href="more.html">
+            <a href="chats.html">
                 <i class="fas fa-angle-left fa-2x"></i>
             </a>        
         </div>
@@ -48,8 +48,21 @@
     </header>
   
             
-    <main class="main-screen">
-        
+    <main class="main-screen main-chat">
+        <div class="chat__timestamp">
+            2020년 5월 20일 목요일
+        </div>
+
+        <div class="message-row">
+            <img src="https://d3kxs6kpbh59hp.cloudfront.net/community/COMMUNITY/8bed56145968494ebcdc0022210fbe57/00956f9b7b1342baaa14ede402de24db_1549626742.png" />
+            <div class="message-row__content">
+                <span class="message__author">hosibito</span>
+                <div class="message__info">
+                    <span class="message__bubble">하이룽!</span>
+                    <span class="message__time">21:27</span>
+                </div>
+            </div>
+        </div>
     </main>
     
     

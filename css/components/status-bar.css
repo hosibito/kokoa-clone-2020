@@ -22,7 +22,7 @@
 }
 
 .status-bar__column:last-child {
-  display: flex; /* 시계를 가운데 두기위한 css 핵  4. 뒤부분을 뒤로 정렬*/
+  display: flex; /* 시계를 가운데 두기위한 css 핵   3 시계가 가운데로옴 */
   justify-content: flex-end;
   align-items: center;
 }

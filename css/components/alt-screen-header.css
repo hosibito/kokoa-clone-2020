@@ -2,7 +2,7 @@
   padding: var(--horizontal-space);
   margin-bottom: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* 가운데 두기위한 css 핵 1 센터에 모은다. */
   align-items: center;
 }
 
@@ -11,10 +11,27 @@
   font-weight: 600;
 }
 
+.alt-header__column {
+  width: 33%; /* 시계를 가운데 두기위한 css 핵   2  */
+}
+
+.alt-header__column:nth-child(2) {
+  text-align: center; /* 시계를 가운데 두기위한 css 핵   3 시계가 가운데로옴 */
+  display: flex;
+  justify-content: center;
+}
+
 .alt-header__column:first-child {
   margin-right: auto;
 }
 
 .alt-header__column:last-child {
   margin-left: auto;
+  display: flex; /* 시계를 가운데 두기위한 css 핵   3 시계가 가운데로옴 */
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.alt-header__column:last-child span:last-child {
+  margin-left: 15px;
 }
