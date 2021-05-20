@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 1000vh;
+  /* height: 1000vh; */
 }
 
 #chat-screen .status-bar {
@@ -35,6 +35,7 @@
 .message-row {
   width: 100%;
   display: flex;
+  margin-bottom: 25px;
 }
 
 .message-row img {
@@ -72,4 +73,27 @@
 .message__time {
   opacity: 0.8;
   font-size: 13px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse; /* 순서바꾸기 방법 1 깜끔함*/
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  margin-right: 0px;
+  margin-left: 10px;
+  /* order: 0;  
+  순서바꾸기 방법 2 오직 display: flex 의 자식에게만 사용가능하다  
+  코드가 많이 필요하나 커스텀이 가능하다. */
+}
+
+.message-row--own .message__bubble {
+  /* order: 1; */
 }
